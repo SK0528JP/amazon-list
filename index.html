@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ほしいものリスト</title>
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('font/default.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'CustomFont', Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #e6f0f5;
+            padding: 20px;
+            border-radius: 32px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #355070;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #d8e2dc;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button {
+            background-color: #4a69bd;
+            color: #fff;
+            border: none;
+            border-radius: 32px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3b5b99;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <img src="image/icon.png" width="32%">
+        <h1>ほしいものリスト</h1>
+        <ul>
+            <li>
+                <span>商品名1 - 2024年8月12日</span>
+                <a href="https://www.amazon.co.jp/your-product-link" target="_blank"><button>Amazonリンク</button></a>
+            </li>
+            <li>
+                <span>商品名2 - 2024年8月12日</span>
+                <a href="https://www.amazon.co.jp/your-product-link" target="_blank"><button>Amazonリンク</button></a>
+            </li>
+            <!-- ここにさらに商品を追加できます -->
+        </ul>
+    </div>
+</body>
+</html>
